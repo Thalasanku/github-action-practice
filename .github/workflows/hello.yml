@@ -1,0 +1,18 @@
+# Workflow [No indetation required for naming the workflow]
+
+# Name 
+name: Hiii Hello
+# on tells when the workflow will run [Indetation Required give by TAB key]
+on:
+  workflow_dispatch:
+# Job tells what the workfow should do. There can be one or more job hence we need to write the jobs
+# Jobs need indetation as it is an object
+jobs:
+  # 1st Job [give indetation]
+  say_hello:
+  #  Creates an short time run container(ephermal) with ubuntu running
+    runs-on: ubuntu-latest
+  # That ephermal container will have steps to execute, hence name those steps and use run: run has the command
+    steps:
+      - name: Say hello to evry individual
+        run: echo "Hello All"
