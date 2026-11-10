@@ -1,0 +1,14 @@
+#This is Linter file for checking code syntax,indetations,spelling etc
+name: Auto Linter
+
+on:
+  push:
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+    # This step will automatically clone the code of the current branch and checking for cloning
+    - name: checking the code/cloning the code
+      uses: actions/checkout@v6
