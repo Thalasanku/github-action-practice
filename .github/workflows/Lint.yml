@@ -1,4 +1,4 @@
-#This is Linter file for checking code syntax,indetations,spelling etc
+#This is Linter file for checking code syntax,indetations,spelling etc for python code only.
 name: Auto Linter
 
 on:
@@ -12,3 +12,6 @@ jobs:
     # This step will automatically clone the code of the current branch and checking for cloning
     - name: checking the code/cloning the code
       uses: actions/checkout@v6
+    # This steps will install linter for python
+    - name: Installing Linter
+      run: pip install ruf
