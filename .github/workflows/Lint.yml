@@ -14,4 +14,4 @@ jobs:
       uses: actions/checkout@v6
     # This steps will install linter for python
     - name: Installing Linter
-      run: pip install ruf
+      run: pip install ruff
