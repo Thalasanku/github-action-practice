@@ -15,3 +15,5 @@ jobs:
     # This steps will install linter for python
     - name: Installing Linter
       run: pip install ruff
+    - name: run linter
+      run: ruff check --verbose .
