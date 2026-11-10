@@ -14,4 +14,5 @@ def hello_world():
 @app.route('/health')
 def health():
     x=1+2 # Error 3: Missing whitespace around operators (E225)
+    print(undefined_variable)  # Error 4: Undefined name (F821)
     return 'Server is up and running'
