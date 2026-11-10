@@ -1,4 +1,4 @@
-#checking for Linter 2nd time by adding wrong details
+
 
 import os  # Error 1: Unused import (F401)
 from flask import Flask, render_template
